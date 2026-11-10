@@ -1182,10 +1182,10 @@
               </div>
 
               <!-- Action Bar -->
-              <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-                <span class="text-[10px] sm:text-[11px] text-slate-400 truncate max-w-[140px]">${t.era.split('(')[0]}</span>
-                <span class="text-gold-400 font-medium group-hover:translate-x-1 transition-transform inline-flex items-center space-x-1">
-                  <span>${planText}</span>
+              <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2 text-xs text-slate-400">
+                <span class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-[10px] sm:text-[11px] text-slate-400" title="${t.era.split('(')[0].trim()}">${t.era.split('(')[0]}</span>
+                <span class="shrink-0 whitespace-nowrap text-gold-400 font-medium group-hover:translate-x-1 transition-transform inline-flex items-center space-x-1">
+                  <span class="whitespace-nowrap">${planText}</span>
                 </span>
               </div>
             </div>
